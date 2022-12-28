@@ -26,7 +26,7 @@ def main():
         while len(result)<k:
             result.append(str(i))
             i+=1
-            if extras>jump:
+            if extras>=jump:
                 i+=jump
                 extras-=jump
                 jump+=1
