@@ -16,7 +16,14 @@ mod = int(1.e9) + 7
 
 
 def main():
-    
+    test_cases = int(input())
+    for _ in range(test_cases):
+        a,b = [int(num) for num in input().split(" ")]
+        c,d = [int(num) for num in input().split(" ")]
+        if (a<b and a<c) or (b<a and b<d) or (c<a and c<d) or (d<c and d<b):
+            print("YES")
+        else:
+            print("NO")
 
 
 
