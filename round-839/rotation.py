@@ -20,10 +20,13 @@ def main():
     for _ in range(test_cases):
         a,b = [int(num) for num in input().split(" ")]
         c,d = [int(num) for num in input().split(" ")]
-        if (a<b and a<c) or (b<a and b<d) or (c<a and c<d) or (d<c and d<b):
+        mi = min([a,b,c,d])
+        ma = max([a,b,c,d])
+        if mi==a and ma==d or mi==d and ma==a or mi==c and ma==b or mi==b and ma==c:
             print("YES")
         else:
             print("NO")
+
 
 
 
