@@ -28,8 +28,8 @@ def main():
             i+=1
             if extras>jump:
                 i+=jump
-                jump+=1
                 extras-=jump
+                jump+=1
         print(" ".join(result))
     
             
